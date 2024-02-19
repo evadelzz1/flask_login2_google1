@@ -1,33 +1,34 @@
 # Simple sample Flask App with Google Login
 
-For documentation check out:
+### For documentation check out:
 https://www.youtube.com/watch?v=FKgJEfrhU1E
 
 
+### Install
+    git clone https://github.com/evadelzz1/flask-auth-ex1.git
 
-git clone https://github.com/evadelzz1/flask-auth-ex1.git
+    cd ./flask-auth-ex1/
 
-cd ./flask-auth-ex1/
+    python -m venv .venv && source .venv/bin/activate
 
-python -m venv .venv && source .venv/bin/activate
-
-pip install -r requirements.txt
-
-
-cat .env
-==============
-APP_SECRET=""  # YOUR CLIENT SECRET
-CLIENT_ID="" # YOUR CLIENT ID
-==============
-
-cat client_secret.json
+    pip install -r requirements.txt
 
 
+    cat .env
+    ==========================================
+    APP_SECRET=""  # YOUR CLIENT SECRET
+    CLIENT_ID="" # YOUR CLIENT ID
+    ==========================================
 
-python app.py
+    cat client_secret.json
+    ==========================================
+    ...
+    ==========================================
 
 
+    python app.py
 
+### Reference
 
 https://www.youtube.com/watch?v=FKgJEfrhU1E
 
