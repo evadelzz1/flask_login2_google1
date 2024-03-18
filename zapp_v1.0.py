@@ -3,7 +3,7 @@ import pathlib
 
 import requests
 from dotenv import load_dotenv
-from flask import Flask, session, abort, redirect, request, render_template, url_for
+from flask import Flask, session, abort, redirect, request
 from google.oauth2 import id_token
 from google_auth_oauthlib.flow import Flow
 from pip._vendor import cachecontrol
@@ -74,10 +74,6 @@ def callback():
 
 @app.route("/logout")
 def logout():
-    session.pop('google_id', None)
-    session.pop('name', None)
-    
-    # Then clear the rest of the session
     session.clear()
     return redirect("/")
 
@@ -85,8 +81,8 @@ def logout():
 @app.route("/")
 @app.route("/index.html")
 def index():
-    # return "Hello World <a href='/login'><button>Login</button></a>"
-    return render_template('index.html')
+    return "Hello World <a href='/login'><button>Login</button></a>"
+
 
 @app.route("/protected_area")
 @login_is_required
