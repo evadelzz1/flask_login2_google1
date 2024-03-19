@@ -38,3 +38,4 @@ https://www.youtube.com/watch?v=FKgJEfrhU1E
 
 https://github.com/code-specialist/flask_google_login
 
+https://goldenrabbit.co.kr/2023/08/07/oauth를-사용한-구글-로그인-인증하기-1편/
